@@ -1,0 +1,20 @@
+{
+  "name": "alfebelow.com",
+  "version": "1.0.0",
+  "description": "https://alfebelow.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfe/alfebelow.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfe/alfebelow.com/issues"
+  },
+  "homepage": "https://github.com/alfe/alfebelow.com#readme"
+}

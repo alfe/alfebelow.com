@@ -7,14 +7,17 @@
     <style>
       body {
         margin: 0;
-        background: #282C59;
+        background: #333333;
       }
       header {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url(./img/header.png);
-        background-size: cover;
+        background: #EEEEEE;
+        background-color: #EEEEEE;
+        background-image: linear-gradient(rgba(255,255,255,.5) 2px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+        background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+        background-position: -1px 38px, -2px -2px, -1px -1px, -1px -1px;
         height: 80vh;
       }
       .header-contents {
@@ -22,17 +25,24 @@
         align-items: center;
         justify-content: center;
         padding: 0 2rem;
-        border-bottom: 4px solid #FFFFFF;
+        border-bottom: 4px solid #EEEEEE;
       }
       .header-contents > * {
         margin: .5rem;
+        filter: drop-shadow(2px 0px 2px rgba(0,0,0,.75));
+      }
+      .header-contents > a:hover {
+        filter: drop-shadow(2px 0px 4px rgba(0,0,0,.9));
+      }
+      .header-contents > a:active {
+        transform: translate(1px, 1px);
+        filter: brightness(0.5);
       }
       .header-contents h1 {
         color: #FFFFFF;
-        font-family: monospace;
-        font-size: 4.5rem;
+        font-size: 3rem;
         margin-right: 3rem;
-        margin-top: -.5rem;
+        margin-top: 0;
       }
       h2 {
         color: #FFFFFF;

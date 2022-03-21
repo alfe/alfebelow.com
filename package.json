@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "https://alfebelow.com/",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alfe/alfebelow.com.git"
@@ -15,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/alfe/alfebelow.com/issues"
   },
-  "homepage": "https://github.com/alfe/alfebelow.com#readme"
+  "homepage": "https://github.com/alfe/alfebelow.com#readme",
+  "dependencies": {
+    "global": "^4.4.0",
+    "serve": "^13.0.2"
+  }
 }

@@ -59,11 +59,29 @@
         margin-top: 3rem;
         border-bottom: 2px solid #FFFFFF;
       }
+      .content-button-link {
+        text-decoration: none;
+      }
+      .content-button-link[href^="https://"] .content-button{
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, .7);
+      }
+      .content-button-link[href^="https://"] .content-button:hover{
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, .7);
+        transform: translate(-1px, -1px);
+      }
+      .content-button-link[href^="https://"] .content-button:active{
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, .7);
+        transform: translate(1px, 1px);
+      }
+      .content-button-link:not([href^="https://"]) .content-button{
+        background: #DDDDDD;
+        transform: translate(1px, 1px);
+      }
       .content-button {
-          background: #EEEEEE;
+          background: #FFFFFF;
           width: 80%;
           max-width: 960px;
-          height: 10rem;
+          height: 15rem;
           margin: 1rem auto;
           display: flex;
           border-radius: 8px;
@@ -104,20 +122,23 @@
           </div>
         </header>
       `;
-      const ContentButton = ({ img, title, detail }) => html`
-        <div className="content-button">
-          <div className="content-button-img">
-            <img src=${img} />
+      const ContentButton = ({ link, img, title, detail }) => html`
+        <a href="${link}" className="content-button-link" target="_blank" rel="noopener">
+          <div className="content-button">
+            <div className="content-button-img">
+              <img src=${img} alt="${title}" />
+            </div>
+            <div className="content-button-text">
+              <div className="content-button-text-title">${title}</div>
+              <div className="content-button-text-detail">${detail}</div>
+            </div>
           </div>
-          <div className="content-button-text">
-            <div className="content-button-text-title">${title}</div>
-            <div className="content-button-text-detail">${detail}</div>
-          </div>
-        </div>
+        </a>
       `;
       const app = html`
         <div>
           <${Header} />
+          <${ContentButton} img="/img/10.png" link="https://obs-discord-icon.alfebelow.com/" title="OBSのDiscordアイコン外観変更ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、横並びにしたりアイコンを四角にしたりするためのカスタムCSSをつくるジェネレーター" />
           <h2>archived</h2>
           <${ContentButton} img="/img/1.png" title="三条ビール祭りマップ" detail="地ビール祭り京都2015 で配布していた地図に現在地情報が表示されるようにしたもの。思ってた以上に現地で重宝した。(元地図引用 http://www.kyoto-beer.com/)" />
           <${ContentButton} img="/img/2.png" title="ALL KOBE" detail="芸術大学生と情報系院生で架空のベンチャーキャピタルにアプリを売り込む演習講義用デモアプリ" />

@@ -18,5 +18,8 @@
   "dependencies": {
     "global": "^4.4.0",
     "serve": "^13.0.2"
+  },
+  "resolutions": {
+    "minimist": "^1.2.6"
   }
 }

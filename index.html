@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>alfebelow.com</title>
     <link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="css/main.css">
     <meta property="og:url" content="https://alfebelow.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="alfebelow.com">
@@ -14,103 +15,13 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@alfe_below">
     <meta name="twitter:creator" content="@alfe_below">
-    <style>
-      body {
-        margin: 0;
-        background: #333333;
-      }
-      header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #EEEEEE;
-        background-color: #EEEEEE;
-        background-image: linear-gradient(rgba(255,255,255,.5) 2px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
-        background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-        background-position: -1px 38px, -2px -2px, -1px -1px, -1px -1px;
-        height: 80vh;
-      }
-      .header-contents {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 2rem;
-        border-bottom: 4px solid #EEEEEE;
-      }
-      .header-contents > * {
-        margin: .5rem;
-        filter: drop-shadow(2px 0px 2px rgba(0,0,0,.75));
-      }
-      .header-contents > a:hover {
-        filter: drop-shadow(2px 0px 4px rgba(0,0,0,.9));
-      }
-      .header-contents > a:active {
-        transform: translate(1px, 1px);
-        filter: brightness(0.5);
-      }
-      .header-contents h1 {
-        color: #FFFFFF;
-        font-size: 3rem;
-        margin-right: 3rem;
-        margin-top: 0;
-      }
-      h2 {
-        color: #FFFFFF;
-        text-align: center;
-        margin-top: 3rem;
-        border-bottom: 2px solid #FFFFFF;
-      }
-      .content-button-link {
-        text-decoration: none;
-      }
-      .content-button-link[href^="https://"] .content-button{
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, .7);
-      }
-      .content-button-link[href^="https://"] .content-button:hover{
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, .7);
-        transform: translate(-1px, -1px);
-      }
-      .content-button-link[href^="https://"] .content-button:active{
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, .7);
-        transform: translate(1px, 1px);
-      }
-      .content-button-link:not([href^="https://"]) .content-button{
-        background: #DDDDDD;
-        transform: translate(1px, 1px);
-      }
-      .content-button {
-          background: #FFFFFF;
-          width: 80%;
-          max-width: 960px;
-          height: 15rem;
-          margin: 1rem auto;
-          display: flex;
-          border-radius: 8px;
-          overflow: hidden;
-      }
-      .content-button-text {
-          margin: 2rem;
-          color: #333;
-      }
-      .content-button-text-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-      .content-button-text-detail {
-        font-size: .8rem;
-      }
-      .slide-list {
-        width: 80%;
-        max-width: 960px;
-        margin: 1rem auto;
-      }
-      .slide-list li {
-        color: #FFFFFF;
-      }
-      .slide-list li a {
-        color: #cfd5ff;
-      }
-    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9WQB7P85L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-Z9WQB7P85L');
+    </script>
   </head>
   <body>
     <script type="module">
@@ -126,10 +37,9 @@
         <header>
           <div className="header-contents">
             <h1>alfebelow.com</h1>
+            <div className="spacer"></div>
             <${HeaderIcon} title="Twitter" href="https://twitter.com/alfe_below" img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOTSURBVHhe7ZpPSBRRHMedjA2JlbAIJAqi/3TqYASSbF0i6BR46JC3iEA8RBJBgnQM8RZEiBAREUR0kSwihSCRwgpbJJE6SEQZ4qq7zOyua9/fzteIZd3WnZmdmeX3gR/vzcyb3/v9vvvem/GNdYqiKIqiKIqiKIqiKIqiKIqiKIqi1DS9vb2bMpnM6ZWVlf5cLvdidXX1E8rnKG9alnWUzYoyMjKymdVgMjc3F2XVFSBKC8QZR1kUXMuheJBMJpt5Sx4REgIPZLPZCzwVPCRoxD+VSCSaeMoRkiz8pW1pSoN239H+LKrdsDciJJiOx+MRugse+EV7GPzE4uLiDp6uCEzBNvgpS6xi4N5kOp0+TnfBBHEO2+HmA/5qmuZBXtoQsu7g/hm62jC4dx6Cx5aWlnbisAv1VroOFghuNh8xkcBRnOPlssHUOm97qAz0Ow6b5uE9ug0eCG69UXEb1sBm/wVT+5F9m2OGAr2GIcC/U7IQ/OKzEOJyOY95NI/bdznirryO0GUwgSBXGey6ULgbha8B/4Jmv+zWlSEjlK6CDWJtgiBJO+zSoF0WxTCSu4KyBbaFbkpN7XIZoKvgU84oKwYETMMmYfImn7DPVswdhhNsEOgeWTdkSthx+0Y/Q3INg6WrYHQsGIbxAeVblO2wA7xUVdB/Z319vaujzCvBxiDSCR76ySnEMcq6K3jyuEWQT1n1Ews2ZlfdwxPBlpeX72P9SPHQL97hhxPRXMUTwaLRqLw/9fDQF7AsvGQ1HPApOZh/VvmAZVmHGUp4oGjXEb9pp1Ed5KHDEMJJKpXaDeFuIZEp5uQp2Wz2IrsOFzLCINJr2ChsBibbyJ6CLiYDv39fCows+Ruxasj2NLsOJ9w1fcV8PAX9PGG34Ub29ZHMBPPyBPifx1q5i12GH+TUAOuDuf7EhFiyNp5hV7UFP0hcwtr2EOXafrsj4Osa3dcuyLMdA8PRjirppsvaJJPJnIRQz5hsxcCHfKvsoNvawjTN/Zg2XUjyvZ2uM+BHPuO10X1VcXU/TP41oLGxUabIPiS0FeU2WLNhGHvluks8xjrYiX5+8zjcyNs9xOqAfYO5BkbVUOA/+TuBwsUwFQeRbFlfkArBfT9wf59lWUfo1nc82aIuRN72Y7HYMQjQiukpa88hlNuhydp/9yyI4dxPtPmC+mcINRqJRD7mryqKoiiKoiiKoiiKoiiKoiiKomyIuro/oUtLgPOzVIwAAAAASUVORK5CYII=" />
-
             <${HeaderIcon} title="はてなブログ" href="https://blog.alfebelow.com/" img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOPSURBVHhe7Zq/axRBFMezh5hCBA0YFRsLOxFESGEhpEkhgqWlpPAvEKNoFQwWppVgYWOdShCxPEgjiJyFXKkhiCTkRIWwIZtccn6/M1/X3buNufzwLsy+Dxwz874zA+/xdvfN3g4YhmEYhmEYhmEYhmEYhmEYRolptVqDW1tby2gLgfYDzaCm95WK2r6yubl5K4qiUxp2AO0k52hoIIPe+VzaHs7R9HKTJMlFxcSxsbFxVV0yotbBuVpWXhCHGR8Ol0V12Rzs06YhmaGttCwtLR1DQGIFg0zQrr4LGJoJP3IBjbmG9lLSbDbvKBYMRjOO47O0y+QCRhs1mVpcQ3spQSBqigOZlTkXMILurLe4wNZkLhdtN3dmzg1JHQGjJpODayWVB9RVL+U/s2axWq0ekdQRMGqcI3OLayWVA/g8hABkb/bTkhyypQEjGE57q7/5oxmSFD7IkLvedc/a2toFSQ6ZcwHjHJkd3ENS+CBDsrVVVeYU2XMBIzBVveKyzNVswQNfR73LKeOSUmQvCti4V1JGJYULnMyWCLlCtF6vH8Wl9lQyL7sXtEkuKnTTUiRI2otQkDvqYPzEm//CAEp2wJQ9SqXFbpDA+Yfy9Q8jkhwYF70T+yrZgXHuQM49JYUFayn4N+/dLL5pw1wUsGXJKVwrjcxna7hgaK/WgTtoZynIQGbQY8kpMKcHcpI9JfxvevbGFVnRUNeB8bC6KVNTU7xf3UcMPuP3E3Om5+bmOgIGTqh1YO4vdcMCAXjFjCDox6urq+ckdQ2WnuZav4vjtaTwYLUOZ9OnJC63XZ8JuUbL3VOy/ZQQHPDzmXfXO4zmsqQdSZLkUlvAn0sKl5WVleHsJYX+G0k7wrla5i5p7iUpbJAZD+S3A0+565K2BdPG/OyUR5LCR0ecb3Kc2fLhX7XU5ORkBXPeazrBFiV7t4+syh2kOZbUwW7mBosq/48+BI6FoqxRNn7RHGbjpyAr+25ApuSqf9zbiqr/vlX1hwL4PIYsyZ4F9wT2+I7mprbtGZHangFHF6MoOqPhvkDAFiqVynkNe0LPA8bsUPdAQPB76kNfA7ZXZw9ij71yKL4P2w2IVV8/rOtrwPAEvNdoNI5r2C231ZJEbbjgpr/jx3Pdwr20bbisr69fgaP8ZnVfYI+4NN9Y8EtCOPwWv+w/SF3BNfjVEKxr2s4wDMMwDMMwDMMwDMMwDMMwwmdg4DelOhauFPwcmgAAAABJRU5ErkJggg==" />
-
             <${HeaderIcon} title="GitHub" href="https://github.com/alfe" img="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzYiIGhlaWdodD0iNzYiIHZpZXdCb3g9IjAgMCA3NiA3NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM4IDE2QzI1LjYyNSAxNiAxNiAyNS43MDk3IDE2IDM4LjE5MzVDMTYgNTIuNzU4MSAyOS4wNjI1IDU5IDMxLjEyNSA1OUMzMi41IDU5IDMyLjUgNTguMzA2NSAzMi41IDU3LjYxMjlWNTQuMTQ1MkMyNy42ODc1IDU1LjUzMjMgMjUuNjI1IDUyLjc1ODEgMjQuOTM3NSA1MC42Nzc0QzI0LjkzNzUgNTAuNjc3NCAyNC45Mzc1IDQ5Ljk4MzkgMjMuNTYyNSA0OC41OTY4QzIyLjg3NSA0Ny45MDMyIDIwLjEyNSA0Ni41MTYxIDIyLjg3NSA0Ni41MTYxQzI0LjkzNzUgNDYuNTE2MSAyNi4zMTI1IDQ5LjI5MDMgMjYuMzEyNSA0OS4yOTAzQzI4LjM3NSA1Mi4wNjQ1IDMxLjEyNSA1MS4zNzEgMzIuNSA1MC42Nzc0QzMyLjUgNDkuMjkwMyAzMy44NzUgNDcuOTAzMiAzMy44NzUgNDcuOTAzMkMyOC4zNzUgNDcuMjA5NyAyNC4yNSA0NS4xMjkgMjQuMjUgMzcuNUMyNC4yNSAzNC43MjU4IDI0LjkzNzUgMzIuNjQ1MiAyNi4zMTI1IDMxLjI1ODFDMjYuMzEyNSAzMS4yNTgxIDI0LjkzNzUgMjguNDgzOSAyNi4zMTI1IDI1LjAxNjFDMjYuMzEyNSAyNS4wMTYxIDI5Ljc1IDI1LjAxNjEgMzIuNSAyNy43OTAzQzM0LjU2MjUgMjYuNDAzMiA0MS40Mzc1IDI2LjQwMzIgNDMuNSAyNy43OTAzQzQ2LjI1IDI1LjAxNjEgNDkuNjg3NSAyNS4wMTYxIDQ5LjY4NzUgMjUuMDE2MUM1MS4wNjI1IDI5Ljg3MSA0OS42ODc1IDMxLjI1ODEgNDkuNjg3NSAzMS4yNTgxQzUxLjA2MjUgMzIuNjQ1MiA1MS43NSAzNC43MjU4IDUxLjc1IDM3LjVDNTEuNzUgNDUuMTI5IDQ2LjkzNzUgNDcuMjA5NyA0Mi4xMjUgNDcuOTAzMkM0Mi44MTI1IDQ4LjU5NjggNDMuNSA0OS45ODM5IDQzLjUgNTIuMDY0NVY1Ny42MTI5QzQzLjUgNTguMzA2NSA0My41IDU5IDQ0Ljg3NSA1OUM0Ni45Mzc1IDU5IDYwIDUyLjc1ODEgNjAgMzguMTkzNUM2MCAyNS43MDk3IDUwLjM3NSAxNiAzOCAxNloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" />
           </div>
         </header>
@@ -147,6 +57,13 @@
           </div>
         </a>
       `;
+      const SlideItem = ({ link, title, detail }) => html`
+        <li>
+          <a href="${link}" className="slide-item-link" target="_blank" rel="noopener">
+            ${title}
+          </a> - ${detail}
+        </li>
+      `;
       const app = html`
         <div>
           <${Header} />
@@ -155,10 +72,9 @@
           <${ContentButton} img="/img/11.png" link="https://draft-twi.alfebelow.com/" title="ツイート下書きアプリ" detail="Twitterにまとまった文章をツリー投稿するときの下書きとかメモとかを書くアプリ" />
           <h2>Slide</h2>
           <ul class="slide-list">
-            <li><a href="/slide/html-mail" target="_blank" rel="noopener">HTMLメール</a> - HTMLメールの表現力とか開発のしやすさとかが、残念ながらいまだガラケーと同じくらいという話</li>
-            <li><a href="https://www.figma.com/proto/4kihbdb0qrKdYcYWnr0vfU/VRUI?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.17&scaling=contain" target="_blank" rel="noopener">VR UI</a> - VR内でのUIをどうすれば理解してもらいやすくなるか</li>
-            <li><a href="https://www.figma.com/proto/0ftk21buq2EXArK93ZuAFa/RIP-HTML-0330?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.1&scaling=contain" target="_blank" rel="noopener">RIP HTML5</a> - HTML5が廃止になった話</li>
-            
+            <${SlideItem} link="/slide/html-mail" title="HTMLメール" detail="HTMLメールの表現力とか開発のしやすさとかが、残念ながらいまだガラケーと同じくらいという話" />
+            <${SlideItem} link="https://www.figma.com/proto/4kihbdb0qrKdYcYWnr0vfU/VRUI?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.17&scaling=contain" title="VR UI" detail="VR内でのUIをどうすれば理解してもらいやすくなるか" />
+            <${SlideItem} link="https://www.figma.com/proto/0ftk21buq2EXArK93ZuAFa/RIP-HTML-0330?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.1&scaling=contain" title="RIP HTML5" detail="HTML5が廃止になった話" />
           </ul>
           <h2>Archived</h2>
           <${ContentButton} img="/img/1.png" title="三条ビール祭りマップ" detail="地ビール祭り京都2015 で配布していた地図に現在地情報が表示されるようにしたもの。思ってた以上に現地で重宝した。(元地図引用 http://www.kyoto-beer.com/)" />

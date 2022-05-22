@@ -2,24 +2,18 @@
   "name": "alfebelow.com",
   "version": "1.0.0",
   "description": "https://alfebelow.com/",
-  "main": "index.js",
-  "scripts": {},
+  "homepage": "https://alfebelow.com/",
+  "scripts": {
+    "start": "npx serve"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alfe/alfebelow.com.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "alfe",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alfe/alfebelow.com/issues"
-  },
-  "homepage": "https://github.com/alfe/alfebelow.com#readme",
-  "dependencies": {
-    "global": "^4.4.0",
-    "serve": "^13.0.2"
-  },
-  "resolutions": {
-    "minimist": "^1.2.6"
   }
 }

@@ -7,9 +7,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #EEEEEE;
-  background-color: #EEEEEE;
-  background-image: linear-gradient(rgba(255,255,255,.5) 2px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+  background: #AAAAAA;
+  background-color: #AAAAAA;
+  background-image: linear-gradient(rgba(255,255,255,.2) 2px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.2) 2px, transparent 2px),linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -1px 38px, -2px -2px, -1px -1px, -1px -1px;
   height: 80vh;
@@ -19,7 +19,6 @@ header {
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
-  border-bottom: 4px solid #EEEEEE;
   flex-wrap: wrap;
 }
 .header-contents .spacer {
@@ -98,7 +97,16 @@ h2 {
   color: #cfd5ff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:980px) {
+  header {
+    height: 50vh;
+  }
+  .header-contents h1{
+    font-size: 5rem;
+  }
+  .header-contents img{
+    width: 10rem;
+  }
   .spacer {
     width: 100%;
   }

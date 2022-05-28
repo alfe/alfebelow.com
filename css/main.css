@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Futura";
+  src: url("Futura-Bol.woff") format('woff');
+}
 
 body {
   margin: 0;
@@ -7,42 +11,81 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #AAAAAA;
-  background-color: #AAAAAA;
-  /* background-image: linear-gradient(rgba(255,255,255,.2) 2px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.2) 2px, transparent 2px),linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
-  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-  background-position: -1px 38px, -2px -2px, -1px -1px, -1px -1px; */
-  
-  background: url(/img/bk.jpg);
+  background-color: #a8a69c;
+  background: url(/img/bk.jpg), #a8a69c;
   background-size: cover;
   height: 80vh;
 }
-.header-contents {
+
+/* Header Card */
+.card-container {
+  margin: auto;
+  width: 684px;
+  height: 392px;
+  background: #E0DDD8;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.card-container h1 {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  color: #212B10;
+  margin: 112px 80px;
+  letter-spacing: -0.02em;
+}
+.card-container .face {
+  width: 180px;
+  height: 180px;
+  background-color: #ecffc8;
+  background: url(/img/face.jpg), #ecffc8;
+  background-size: cover;
+  border: 16px solid #212B10;
+  border-radius: 200px;
+  float: right;
+  margin: -300px 56px;
+}
+.card-container .info {
+  width: 100%;
+  height: 220px;
+  left: 0;
+  margin-top: -108px;
+  background: #212B10;
+  display: flex;
+  flex-direction: column;
+  padding-right: 240px;
+  box-sizing: border-box;
+}
+.card-container .info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card-container .info li {
+  margin-bottom: -0.25rem;
+}
+.card-container .info a {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 2rem;
-  flex-wrap: wrap;
+  text-decoration: none;
+  margin-left: 64px;
 }
-.header-contents .spacer {
-  margin-right: 3rem;
+.card-container .info a:hover {
+  filter: brightness(0.7);
 }
-.header-contents > * {
-  margin: .5rem;
-  filter: drop-shadow(2px 0px 2px rgba(0,0,0,.75));
+.card-container .info a:active {
+  filter: brightness(0.6);
 }
-.header-contents > a:hover {
-  filter: drop-shadow(2px 0px 4px rgba(0,0,0,.9));
-}
-.header-contents > a:active {
-  transform: translate(1px, 1px);
-  filter: brightness(0.5);
-}
-.header-contents h1 {
+.card-container .link-text {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
   color: #FFFFFF;
-  font-size: 3rem;
-  margin-top: 0;
+  margin-top: 0.25rem;
+  margin-left: 1rem;
 }
+
 h2 {
   color: #FFFFFF;
   text-align: center;
@@ -104,80 +147,5 @@ h2 {
   header {
     height: 50vh;
   }
-  .header-contents h1{
-    font-size: 5rem;
-  }
-  .header-contents img{
-    width: 10rem;
-  }
-  .spacer {
-    width: 100%;
-  }
 }
 
-.card-container {
-  margin: auto;
-  width: 684px;
-  height: 392px;
-  background: #E0DDD8;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.card-container h1 {
-  font-family: 'Futura';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  color: #212B10;
-  margin: 112px 80px;
-}
-
-.card-container .face {
-  width: 180px;
-  height: 180px;
-  background: url(/img/face.jpg);
-  background-size: cover;
-  border: 16px solid #212B10;
-  border-radius: 200px;
-  float: right;
-  margin: -300px 56px;
-}
-.card-container .info {
-  width: 100%;
-  height: 220px;
-  left: 0;
-  margin-top: -116px;
-  background: #212B10;
-  display: flex;
-  flex-direction: column;
-  padding-right: 240px;
-  box-sizing: border-box;
-}
-.card-container .info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.card-container .info li {
-  margin-bottom: -0.25rem;
-}
-.card-container .info a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  margin-left: 64px;
-}
-.card-container .info a:hover {
-  filter: brightness(0.7);
-}
-.card-container .info a:active {
-  filter: brightness(0.6);
-}
-.card-container .link-text {
-  font-family: 'Futura';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #FFFFFF;
-  margin-left: 1rem;
-}

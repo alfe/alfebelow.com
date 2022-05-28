@@ -9,9 +9,12 @@ header {
   align-items: center;
   background: #AAAAAA;
   background-color: #AAAAAA;
-  background-image: linear-gradient(rgba(255,255,255,.2) 2px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.2) 2px, transparent 2px),linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
+  /* background-image: linear-gradient(rgba(255,255,255,.2) 2px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.2) 2px, transparent 2px),linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-  background-position: -1px 38px, -2px -2px, -1px -1px, -1px -1px;
+  background-position: -1px 38px, -2px -2px, -1px -1px, -1px -1px; */
+  
+  background: url(/img/bk.jpg);
+  background-size: cover;
   height: 80vh;
 }
 .header-contents {
@@ -110,4 +113,71 @@ h2 {
   .spacer {
     width: 100%;
   }
+}
+
+.card-container {
+  margin: auto;
+  width: 684px;
+  height: 392px;
+  background: #E0DDD8;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-container h1 {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  color: #212B10;
+  margin: 112px 80px;
+}
+
+.card-container .face {
+  width: 180px;
+  height: 180px;
+  background: url(/img/face.jpg);
+  background-size: cover;
+  border: 16px solid #212B10;
+  border-radius: 200px;
+  float: right;
+  margin: -300px 56px;
+}
+.card-container .info {
+  width: 100%;
+  height: 220px;
+  left: 0;
+  margin-top: -116px;
+  background: #212B10;
+  display: flex;
+  flex-direction: column;
+  padding-right: 240px;
+  box-sizing: border-box;
+}
+.card-container .info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card-container .info li {
+  margin-bottom: -0.25rem;
+}
+.card-container .info a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 64px;
+}
+.card-container .info a:hover {
+  filter: brightness(0.7);
+}
+.card-container .info a:active {
+  filter: brightness(0.6);
+}
+.card-container .link-text {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-left: 1rem;
 }

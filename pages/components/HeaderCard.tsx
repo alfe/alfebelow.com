@@ -78,6 +78,26 @@ const HeaderCard = () => (
         margin-bottom: -0.25rem;
       }
 
+      @media screen and (max-width:680px) {
+        .card-container {
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .card-container .info {
+          padding-right: 0;
+        }
+        .card-container .face {
+          display: none;
+        }
+        .card-container h1 {
+          font-size: 2rem;
+          margin: 112px auto;
+          text-align: center;
+        }
+      }
     `}</style>
   </div>
 );

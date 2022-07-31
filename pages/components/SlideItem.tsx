@@ -1,7 +1,7 @@
 const SlideItem = ({ link, title, detail }) => (
   <>
     <li>
-      <a href={link} className="slide-item-link" target="_blank" rel="noopener">
+      <a href={link} target="_blank" rel="noopener">
         {title}
       </a> - {detail}
     </li>

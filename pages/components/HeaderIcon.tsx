@@ -26,6 +26,12 @@ const HeaderIcon = ({ href, img, title, content }) => (
         margin-top: 0.25rem;
         margin-left: 1rem;
       }
+
+      @media screen and (max-width:680px) {
+        a {
+          margin-left: 8px;
+        }
+      }
     `}</style>
   </>
 );

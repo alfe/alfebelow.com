@@ -52,6 +52,15 @@ const ContentButton = ({ link, img, title, detail }) => (
         .content-button-text-detail {
           font-size: .8rem;
         }
+
+        @media screen and (max-width:680px) {
+          .content-button {
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            max-width: calc(100% - 1rem);
+          }
+        }
     `}</style>
   </>
 );

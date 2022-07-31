@@ -1,19 +1,18 @@
 {
-  "name": "alfebelow.com",
-  "version": "1.0.0",
-  "description": "https://alfebelow.com/",
-  "homepage": "https://alfebelow.com/",
+  "private": true,
   "scripts": {
-    "start": "npx serve"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alfe/alfebelow.com.git"
+  "dependencies": {
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "keywords": [],
-  "author": "alfe",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alfe/alfebelow.com/issues"
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "@types/react": "^18.0.15",
+    "typescript": "^4.7.4"
   }
 }

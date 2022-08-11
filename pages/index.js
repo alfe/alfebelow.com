@@ -35,6 +35,7 @@ export default function Home() {
         <ContentButton img="/img/14.png" link="https://vrc-tech.com/" title="VRC技術市" detail="VRChat技術の同人誌イベント。アップローダーやツール群を作成" />
         <h2>Slide</h2>
         <ul className="slide-list">
+          <SlideItem link="https://www.figma.com/file/iVW8BT7nT792Yba47CratS/HTML-Level?node-id=211%3A878" title="pにdivをいれてはいけない" detail="HTMLのタグをしっかり書くということについて" />
           <SlideItem link="/slide/html-mail" title="HTMLメール" detail="HTMLメールの表現力とか開発のしやすさとかが、残念ながらいまだガラケーと同じくらいという話" />
           <SlideItem link="https://www.figma.com/proto/4kihbdb0qrKdYcYWnr0vfU/VRUI?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.17&scaling=contain" title="VR UI" detail="VR内でのUIをどうすれば理解してもらいやすくなるか" />
           <SlideItem link="https://www.figma.com/proto/0ftk21buq2EXArK93ZuAFa/RIP-HTML-0330?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.1&scaling=contain" title="RIP HTML5" detail="HTML5が廃止になった話" />

@@ -30,6 +30,8 @@ export default function Home() {
 
       <main>
         <h2>Application</h2>
+        <ContentButton img="/img/16.jpg" link="https://obs-discord-picture.alfebelow.com/" title="OBSのDiscord通話相手立ち絵表示ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、立ち絵で表示するためのカスタムCSSをつくるジェネレーター" />
+        <ContentButton img="/img/15.jpg" link="https://obs-discord-text.alfebelow.com/" title="Discordテキストチャンネル外観変更ジェネレーター" detail="DiscordのテキストチャンネルをOBS Studioに表示するときに、見た目を変更するためのカスタムCSSをつくるジェネレーター" />
         <ContentButton img="/img/10.png" link="https://obs-discord-icon.alfebelow.com/" title="OBSのDiscordアイコン外観変更ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、横並びにしたりアイコンを四角にしたりするためのカスタムCSSをつくるジェネレーター" />
         <ContentButton img="/img/11.png" link="https://draft-twi.alfebelow.com/" title="ツイート下書きアプリ" detail="Twitterにまとまった文章をツリー投稿するときの下書きとかメモとかを書くアプリ" />
         <ContentButton img="/img/14.png" link="https://vrc-tech.com/" title="VRC技術市" detail="VRChat技術の同人誌イベント。アップローダーやツール群を作成" />

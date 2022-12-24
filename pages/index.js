@@ -34,7 +34,6 @@ export default function Home() {
         <ContentButton img="/img/15.jpg" link="https://obs-discord-text.alfebelow.com/" title="Discordテキストチャンネル外観変更ジェネレーター" detail="DiscordのテキストチャンネルをOBS Studioに表示するときに、見た目を変更するためのカスタムCSSをつくるジェネレーター" />
         <ContentButton img="/img/10.png" link="https://obs-discord-icon.alfebelow.com/" title="OBSのDiscordアイコン外観変更ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、横並びにしたりアイコンを四角にしたりするためのカスタムCSSをつくるジェネレーター" />
         <ContentButton img="/img/11.png" link="https://draft-twi.alfebelow.com/" title="ツイート下書きアプリ" detail="Twitterにまとまった文章をツリー投稿するときの下書きとかメモとかを書くアプリ" />
-        <ContentButton img="/img/14.png" link="https://vrc-tech.com/" title="VRC技術市" detail="VRChat技術の同人誌イベント。アップローダーやツール群を作成" />
         <h2>Slide</h2>
         <ul className="slide-list">
           <SlideItem link="https://www.figma.com/file/iVW8BT7nT792Yba47CratS/HTML-Level?node-id=211%3A878" title="pにdivをいれてはいけない" detail="HTMLのタグをしっかり書くということについて" />
@@ -43,6 +42,7 @@ export default function Home() {
           <SlideItem link="https://www.figma.com/proto/0ftk21buq2EXArK93ZuAFa/RIP-HTML-0330?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.1&scaling=contain" title="RIP HTML5" detail="HTML5が廃止になった話" />
         </ul>
         <h2>Archived</h2>
+        <ContentButton img="/img/14.png" title="VRC技術市" detail="VRChat技術の同人誌イベント。アップローダーやツール群を作成" />
         <ContentButton img="/img/13.png" title="reachable friends in vrchat" detail="VRChat内のオンラインなフレンドを公式サイト上でワールドごとに一覧化する拡張機能。同機能が公式で実装されたのでアーカイブ" />
         <ContentButton img="/img/12.png" link="https://atcoder.jp/contests/future-contest-2018-qual/" title="HACK TO THE FUTURE 2018" detail="競技プログラミングのビジュアライザー作成" />
         <ContentButton img="/img/1.png" title="三条ビール祭りマップ" detail="地ビール祭り京都2015 で配布していた地図に現在地情報が表示されるようにしたもの。思ってた以上に現地で重宝した。(元地図引用 http://www.kyoto-beer.com/)" />

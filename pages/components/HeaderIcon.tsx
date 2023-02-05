@@ -1,6 +1,6 @@
-const HeaderIcon = ({ href, img, title, content }) => (
+const HeaderIcon = ({ href, img, title, content, ...rest }) => (
   <>
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>
       <img src={img} alt={title} />
       <span className="link-text">{content}</span>
     </a>

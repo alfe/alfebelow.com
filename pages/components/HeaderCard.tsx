@@ -23,7 +23,7 @@ const HeaderCard = () => {
               href="https://twitter.com/alfe_below"
               img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOTSURBVHhe7ZpPSBRRHMedjA2JlbAIJAqi/3TqYASSbF0i6BR46JC3iEA8RBJBgnQM8RZEiBAREUR0kSwihSCRwgpbJJE6SEQZ4qq7zOyua9/fzteIZd3WnZmdmeX3gR/vzcyb3/v9vvvem/GNdYqiKIqiKIqiKIqiKIqiKIqiKIqi1DS9vb2bMpnM6ZWVlf5cLvdidXX1E8rnKG9alnWUzYoyMjKymdVgMjc3F2XVFSBKC8QZR1kUXMuheJBMJpt5Sx4REgIPZLPZCzwVPCRoxD+VSCSaeMoRkiz8pW1pSoN239H+LKrdsDciJJiOx+MRugse+EV7GPzE4uLiDp6uCEzBNvgpS6xi4N5kOp0+TnfBBHEO2+HmA/5qmuZBXtoQsu7g/hm62jC4dx6Cx5aWlnbisAv1VroOFghuNh8xkcBRnOPlssHUOm97qAz0Ow6b5uE9ug0eCG69UXEb1sBm/wVT+5F9m2OGAr2GIcC/U7IQ/OKzEOJyOY95NI/bdznirryO0GUwgSBXGey6ULgbha8B/4Jmv+zWlSEjlK6CDWJtgiBJO+zSoF0WxTCSu4KyBbaFbkpN7XIZoKvgU84oKwYETMMmYfImn7DPVswdhhNsEOgeWTdkSthx+0Y/Q3INg6WrYHQsGIbxAeVblO2wA7xUVdB/Z319vaujzCvBxiDSCR76ySnEMcq6K3jyuEWQT1n1Ews2ZlfdwxPBlpeX72P9SPHQL97hhxPRXMUTwaLRqLw/9fDQF7AsvGQ1HPApOZh/VvmAZVmHGUp4oGjXEb9pp1Ed5KHDEMJJKpXaDeFuIZEp5uQp2Wz2IrsOFzLCINJr2ChsBibbyJ6CLiYDv39fCows+Ruxasj2NLsOJ9w1fcV8PAX9PGG34Ub29ZHMBPPyBPifx1q5i12GH+TUAOuDuf7EhFiyNp5hV7UFP0hcwtr2EOXafrsj4Osa3dcuyLMdA8PRjirppsvaJJPJnIRQz5hsxcCHfKvsoNvawjTN/Zg2XUjyvZ2uM+BHPuO10X1VcXU/TP41oLGxUabIPiS0FeU2WLNhGHvluks8xjrYiX5+8zjcyNs9xOqAfYO5BkbVUOA/+TuBwsUwFQeRbFlfkArBfT9wf59lWUfo1nc82aIuRN72Y7HYMQjQiukpa88hlNuhydp/9yyI4dxPtPmC+mcINRqJRD7mryqKoiiKoiiKoiiKoiiKoiiKomyIuro/oUtLgPOzVIwAAAAASUVORK5CYII=" />
           </li>
-          <li>
+          <li style={{ width: '15rem' }}>
             <HeaderIcon
               rel="me"
               title="GitHub"

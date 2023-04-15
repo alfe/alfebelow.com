@@ -34,6 +34,19 @@ export default function Home() {
         <ContentButton img="/img/15.jpg" link="https://obs-discord-text.alfebelow.com/" title="Discordテキストチャンネル外観変更ジェネレーター" detail="DiscordのテキストチャンネルをOBS Studioに表示するときに、見た目を変更するためのカスタムCSSをつくるジェネレーター" />
         <ContentButton img="/img/10.png" link="https://obs-discord-icon.alfebelow.com/" title="OBSのDiscordアイコン外観変更ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、横並びにしたりアイコンを四角にしたりするためのカスタムCSSをつくるジェネレーター" />
         <ContentButton img="/img/11.png" link="https://draft-twi.alfebelow.com/" title="ツイート下書きアプリ" detail="Twitterにまとまった文章をツリー投稿するときの下書きとかメモとかを書くアプリ" />
+        <h2>Writing</h2>
+        <ul className="writing-list">
+          <SlideItem link="https://qiita.com/alfe_below/items/1141ec9acbb81b504855" title="package.json dependencies メンテの仕方 最短ルート" detail="Qiita" />
+          <SlideItem link="https://future-architect.github.io/articles/20210621a/" title="どうしてHTML5が廃止されたのか" detail="フューチャー技術ブログ" />
+          <SlideItem link="https://future-architect.github.io/articles/20210428c/" title="保守・拡張をしやすいカプセル化したCypress" detail="フューチャー技術ブログ" />
+        </ul>
+        <h2>Publication</h2>
+        <ul className="publication-list">
+          <SlideItem link="https://gihyo.jp/magazine/SD/archive/2022/202204" title="Software Design 2022年4月号" detail="短期連載 Cypressで作る“消耗しない”E2Eテスト環境［4］" />
+          <SlideItem link="https://gihyo.jp/magazine/SD/archive/2022/202202" title="Software Design 2022年2月号" detail="短期連載 Cypressで作る“消耗しない”E2Eテスト環境［2］" />
+          <SlideItem link="https://gihyo.jp/magazine/SD/archive/2018/201801" title="Software Design 2018年1月号" detail="一般記事 システムのセキュリティ運用をもっと楽に・セキュアに 脆弱性管理サービスFutureVuls登場" />
+          <SlideItem link="https://gihyo.jp/magazine/SD/archive/2017/201710" title="Software Design 2017年10月号" detail="第2特集 システムのセキュリティチェックをもっと楽に 脆弱性スキャナVuls入門" />
+        </ul>
         <h2>Slide</h2>
         <ul className="slide-list">
           <SlideItem link="https://www.figma.com/file/iVW8BT7nT792Yba47CratS/HTML-Level?node-id=211%3A878" title="pにdivをいれてはいけない" detail="HTMLのタグをしっかり書くということについて" />
@@ -72,7 +85,7 @@ export default function Home() {
           margin-top: 3rem;
           border-bottom: 2px solid #FFFFFF;
         }
-        .slide-list {
+        .slide-list, .publication-list, .writing-list {
           width: 80%;
           max-width: 960px;
           margin: 1rem auto;

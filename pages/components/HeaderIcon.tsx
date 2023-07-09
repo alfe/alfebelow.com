@@ -43,6 +43,9 @@ const HeaderIcon = ({ href, img, title, content, ...rest }) => (
         .link-text, .link-icon {
           font-size: 2rem;
         }
+        .link-icon {
+          transform: translate(0, 3px);
+        }
       }
     `}</style>
   </>

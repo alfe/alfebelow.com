@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import HeaderCard from './components/HeaderCard';
+import TopContents from './components/TopContents';
 import ContentButton from './components/ContentButton';
 import SlideItem from './components/SlideItem';
 
@@ -20,40 +20,54 @@ export default function Home() {
         <meta name="twitter:site" content="@alfe_below" />
         <meta name="twitter:creator" content="@alfe_below" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9WQB7P85L"></script>
-        <link rel="stylesheet" href="css/main.css?220522" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nerko+One" />
+        <link rel="stylesheet" href="css/main.css?230709" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <HeaderCard />
-      </header>
+      <TopContents />
 
-      <main>
-        <h2>Application</h2>
-        <ContentButton img="/img/16.jpg" link="https://obs-discord-picture.alfebelow.com/" title="OBSのDiscord通話相手立ち絵表示ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、立ち絵で表示するためのカスタムCSSをつくるジェネレーター" />
-        <ContentButton img="/img/15.jpg" link="https://obs-discord-text.alfebelow.com/" title="Discordテキストチャンネル外観変更ジェネレーター" detail="DiscordのテキストチャンネルをOBS Studioに表示するときに、見た目を変更するためのカスタムCSSをつくるジェネレーター" />
-        <ContentButton img="/img/10.png" link="https://obs-discord-icon.alfebelow.com/" title="OBSのDiscordアイコン外観変更ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、横並びにしたりアイコンを四角にしたりするためのカスタムCSSをつくるジェネレーター" />
-        <ContentButton img="/img/11.png" link="https://draft-twi.alfebelow.com/" title="ツイート下書きアプリ" detail="Twitterにまとまった文章をツリー投稿するときの下書きとかメモとかを書くアプリ" />
-        <h2>Writing</h2>
-        <ul className="writing-list">
-          <SlideItem link="https://qiita.com/alfe_below/items/1141ec9acbb81b504855" title="package.json dependencies メンテの仕方 最短ルート" detail="Qiita" />
-          <SlideItem link="https://future-architect.github.io/articles/20210621a/" title="どうしてHTML5が廃止されたのか" detail="フューチャー技術ブログ" />
-          <SlideItem link="https://future-architect.github.io/articles/20210428c/" title="保守・拡張をしやすいカプセル化したCypress" detail="フューチャー技術ブログ" />
-        </ul>
-        <h2>Publication</h2>
-        <ul className="publication-list">
-          <SlideItem link="https://gihyo.jp/magazine/SD/archive/2022/202204" title="Software Design 2022年4月号" detail="短期連載 Cypressで作る“消耗しない”E2Eテスト環境［4］" />
-          <SlideItem link="https://gihyo.jp/magazine/SD/archive/2022/202202" title="Software Design 2022年2月号" detail="短期連載 Cypressで作る“消耗しない”E2Eテスト環境［2］" />
-          <SlideItem link="https://gihyo.jp/magazine/SD/archive/2018/201801" title="Software Design 2018年1月号" detail="一般記事 システムのセキュリティ運用をもっと楽に・セキュアに 脆弱性管理サービスFutureVuls登場" />
-          <SlideItem link="https://gihyo.jp/magazine/SD/archive/2017/201710" title="Software Design 2017年10月号" detail="第2特集 システムのセキュリティチェックをもっと楽に 脆弱性スキャナVuls入門" />
-        </ul>
+      <section className='strengths'>
+        <p>ヒトとテクノロジーのやりとりに興味を持つフロントエンドエンジニア</p>
+        <p>複雑なデータや専門知識が必要な入力フォームを<br />直感的に理解できるように整理し提示するのが得意</p>
+      </section>
+
+      <section className='product'>
+        <h2>product</h2>
+        <div className='product-contents'>
+          <ContentButton img="/ogp/ogp-obs-discord-picture.jpg" link="https://obs-discord-picture.alfebelow.com/" title="OBSのDiscord通話相手立ち絵表示ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、立ち絵で表示するためのカスタムCSSをつくるジェネレーター" />
+          <ContentButton img="/ogp/ogp-obs-discord-text.jpg" link="https://obs-discord-text.alfebelow.com/" title="Discordテキストチャンネル外観変更ジェネレーター" detail="DiscordのテキストチャンネルをOBS Studioに表示するときに、見た目を変更するためのカスタムCSSをつくるジェネレーター" />
+          <ContentButton img="/ogp/ogp-obs-discord-icon.jpg" link="https://obs-discord-icon.alfebelow.com/" title="OBSのDiscordアイコン外観変更ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、横並びにしたりアイコンを四角にしたりするためのカスタムCSSをつくるジェネレーター" />
+        </div>
+      </section>
+
+      <section className='pickup'>
+        <h2>pickup</h2>
+        <div className="pickup-contents">
+          <ContentButton img="/img/gigazine-intro-icon.jpg" link="https://gigazine.net/news/20220517-obs-discord-icon-generator/" title="配信画面上で今誰が話してるのかをDiscordのアイコンで超わかりやすくする「OBSのDiscordアイコン外観変更ジェネレーター」の使い方 - GIGAZINE" detail="GIGAZINEによる紹介。" />
+          <ContentButton img="/img/sd202204.jpg" link="https://gihyo.jp/magazine/SD/archive/2022/202204" title="Software Design 2022年4月号" detail="短期連載 Cypressで作る“消耗しない”E2Eテスト環境［4］ を寄稿。" />
+          <ContentButton img="/img/sd202202.jpg" link="https://gihyo.jp/magazine/SD/archive/2022/202202" title="Software Design 2022年2月号" detail="短期連載 Cypressで作る“消耗しない”E2Eテスト環境［2］ を寄稿。" />
+          <ContentButton img="/img/html5_tombstone.png" link="https://future-architect.github.io/articles/20210621a/" title="どうしてHTML5が廃止されたのか" detail="フューチャー技術ブログへの寄稿。そもそもHTML5とは何か、廃止された経緯について解説。" />
+          <ContentButton img="/img/e2e-unit.png" link="https://future-architect.github.io/articles/20210428c/" title="保守・拡張をしやすいカプセル化したCypress" detail="フューチャー技術ブログへの寄稿。E2EテストはCypressのCustom Commandsなどでカプセル化すると読みやすくなおしやすい。" />
+          <ContentButton img="/img/qiita-dependencies.png" link="https://qiita.com/alfe_below/items/1141ec9acbb81b504855" title="package.json dependencies メンテの仕方 最短ルート" detail="Qiitaへの投稿。package.json の dependencies を最新に保って脆弱性を解消するために、どこから手を付ければいいのか。" />
+          <ContentButton img="/img/sd201801.jpg" link="https://gihyo.jp/magazine/SD/archive/2018/201801" title="Software Design 2018年1月号" detail="一般記事 システムのセキュリティ運用をもっと楽に・セキュアに 脆弱性管理サービスFutureVuls登場 を寄稿。" />
+          <ContentButton img="/img/sd201710.jpg" link="https://gihyo.jp/magazine/SD/archive/2017/201710" title="Software Design 2017年10月号" detail="第2特集 システムのセキュリティチェックをもっと楽に 脆弱性スキャナVuls入門 を寄稿。" />
+          <ContentButton img="/img/fvuls.jpg" link="https://vuls.biz/" title="FutureVuls" detail="脆弱性管理SaaS FutureVulsに画面統括として参画。" />
+          <ContentButton img="/img/curriculum-vitae.png" link="https://github.com/alfe/Curriculum-Vitae" title="職務経歴書" detail="スキル・資格・経歴を記載。ご縁があれば。" />
+        </div>
+      </section>
+{/* 
+      <section className='others'>
         <h2>Slide</h2>
-        <ul className="slide-list">
+        <ul>
           <SlideItem link="https://www.figma.com/file/iVW8BT7nT792Yba47CratS/HTML-Level?node-id=211%3A878" title="pにdivをいれてはいけない" detail="HTMLのタグをしっかり書くということについて" />
           <SlideItem link="/slide/html-mail" title="HTMLメール" detail="HTMLメールの表現力とか開発のしやすさとかが、残念ながらいまだガラケーと同じくらいという話" />
           <SlideItem link="https://www.figma.com/proto/4kihbdb0qrKdYcYWnr0vfU/VRUI?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.17&scaling=contain" title="VR UI" detail="VR内でのUIをどうすれば理解してもらいやすくなるか" />
           <SlideItem link="https://www.figma.com/proto/0ftk21buq2EXArK93ZuAFa/RIP-HTML-0330?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.1&scaling=contain" title="RIP HTML5" detail="HTML5が廃止になった話" />
         </ul>
+      </section> */}
+
+      {/* <section className='Archived'>
         <h2>Archived</h2>
         <ContentButton img="/img/14.png" title="VRC技術市" detail="VRChat技術の同人誌イベント。アップローダーやツール群を作成" />
         <ContentButton img="/img/13.png" title="reachable friends in vrchat" detail="VRChat内のオンラインなフレンドを公式サイト上でワールドごとに一覧化する拡張機能。同機能が公式で実装されたのでアーカイブ" />
@@ -67,7 +81,7 @@ export default function Home() {
         <ContentButton img="/img/7.png" title="Gooraffiti Umechika" detail="日本三大迷宮ともいわれる梅田地下街のストリートビュー。学部時代に写真をストリートビューにするところを担当" />
         <ContentButton img="/img/8.png" title="PSO2 Ship9 緊急クエ通知BOT(@pso2_ship9_emg)" detail="『PSO2緊急クエ発生時間つぶやきbot(@pso2_emg_bot)』から、Ship9ハガルの緊急クエストだけをRTするBOT" />
         <ContentButton img="/img/9.png" title="メイドちゃん" detail="朝起きたときにその日のスケジュールをメールにまとめて送ってくれるメイドメールシステム。ICT Challenge+R 2012 奨励賞" />
-      </main>
+      </section> */}
 
       <style jsx>{`
         header {
@@ -80,15 +94,53 @@ export default function Home() {
           height: 80vh;
         }
         h2 {
-          color: #FFFFFF;
-          text-align: center;
-          margin-top: 3rem;
-          border-bottom: 2px solid #FFFFFF;
+          color: rgba(255, 255, 255, 0.85);
+          font-family: Nerko One;
+          font-size: 3rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
         }
         .slide-list, .publication-list, .writing-list {
           width: 80%;
           max-width: 960px;
           margin: 1rem auto;
+        }
+
+        .strengths {
+          margin: 0;
+          padding: 4rem;
+          background: url("/img/18.png");
+          box-shadow: 0 8px 64px #333 inset;
+        }
+        .strengths > p {
+          font-size: 1.3rem;
+          color: rgba(255, 255, 255, 0.95);
+          text-align: center;
+          font-weight:bold
+        }
+        .product, .pickup, .others {
+          margin: 0;
+          padding: 2rem 14rem;
+          background: rgba(0, 0, 0, 0.80);
+        }
+        .product-contents, .pickup-contents {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .product-contents > *, .pickup-contents > * {
+          flex-basis: 50%;
+        }
+        
+        @media screen and (max-width:680px) {
+          h2 {
+            margin: 0.5rem 1rem;
+          }
+          .product, .pickup, .others {
+            margin: 0;
+            padding: 1rem 0;
+            background: rgba(0, 0, 0, 0.80);
+          }
         }
       `}</style>
 
@@ -97,7 +149,8 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          background: #333333;
+          background: #ECFFC8;
+          font-size: 18px;
         }
 
         * {

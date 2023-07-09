@@ -44,7 +44,7 @@ const HeaderIcon = ({ href, img, title, content, ...rest }) => (
           font-size: 2rem;
         }
         .link-icon {
-          transform: translate(0, 3px);
+          display: none;
         }
       }
     `}</style>

@@ -52,7 +52,7 @@ export default function Home() {
           <ContentButton img="/img/qiita-dependencies.png" link="https://qiita.com/alfe_below/items/1141ec9acbb81b504855" title="package.json dependencies メンテの仕方 最短ルート" detail="Qiitaへの投稿。package.json の dependencies を最新に保って脆弱性を解消するために、どこから手を付ければいいのか。" />
           <ContentButton img="/img/sd201801.jpg" link="https://gihyo.jp/magazine/SD/archive/2018/201801" title="Software Design 2018年1月号" detail="一般記事 システムのセキュリティ運用をもっと楽に・セキュアに 脆弱性管理サービスFutureVuls登場 を寄稿。" />
           <ContentButton img="/img/sd201710.jpg" link="https://gihyo.jp/magazine/SD/archive/2017/201710" title="Software Design 2017年10月号" detail="第2特集 システムのセキュリティチェックをもっと楽に 脆弱性スキャナVuls入門 を寄稿。" />
-          <ContentButton img="/img/fvuls.jpg" link="https://vuls.biz/" title="FutureVuls" detail="脆弱性管理SaaS FutureVulsに画面統括として参画。" />
+          {/* <ContentButton img="/img/fvuls.jpg" link="https://vuls.biz/" title="FutureVuls" detail="脆弱性管理SaaS FutureVulsに画面統括として参画。" /> */}
           <ContentButton img="/img/curriculum-vitae.png" link="https://github.com/alfe/Curriculum-Vitae" title="職務経歴書" detail="スキル・資格・経歴を記載。ご縁があれば。" />
         </div>
       </section>

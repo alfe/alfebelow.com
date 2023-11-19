@@ -35,9 +35,11 @@ export default function Home() {
       <section className='product'>
         <h2>product</h2>
         <div className='product-contents'>
+          <ContentButton img="/ogp/ogp-obs-discord-icon.jpg" link="https://obs-discord-icon.alfebelow.com/" title="OBSのDiscordアイコン外観変更ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、横並びにしたりアイコンを四角にしたりするためのカスタムCSSをつくるジェネレーター" />
           <ContentButton img="/ogp/ogp-obs-discord-picture.jpg" link="https://obs-discord-picture.alfebelow.com/" title="OBSのDiscord通話相手立ち絵表示ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、立ち絵で表示するためのカスタムCSSをつくるジェネレーター" />
           <ContentButton img="/ogp/ogp-obs-discord-text.jpg" link="https://obs-discord-text.alfebelow.com/" title="Discordテキストチャンネル外観変更ジェネレーター" detail="DiscordのテキストチャンネルをOBS Studioに表示するときに、見た目を変更するためのカスタムCSSをつくるジェネレーター" />
-          <ContentButton img="/ogp/ogp-obs-discord-icon.jpg" link="https://obs-discord-icon.alfebelow.com/" title="OBSのDiscordアイコン外観変更ジェネレーター" detail="Discordで通話中のメンバーをOBS Studioに表示するときに、横並びにしたりアイコンを四角にしたりするためのカスタムCSSをつくるジェネレーター" />
+          <ContentButton img="/img/aviftojpg.jpg" link="https://github.com/alfe/aviftojpg" title="npx aviftojpg <dir> [options]" detail="複数のAVIFファイルを一括でJPEGファイルに変換するnpxコマンド" />
+          <ContentButton img="/img/printpngprompt.jpg" link="https://github.com/alfe/printpngprompt" title="npx printpngprompt <dir> [options]" detail="Stable Diffusionで出力したPNGファイルからプロンプトやモデル情報などを取得するnpxコマンド" />
         </div>
       </section>
 

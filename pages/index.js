@@ -46,6 +46,7 @@ export default function Home() {
       <section className='pickup'>
         <h2>pickup</h2>
         <div className="pickup-contents">
+          <ContentButton img="/img/web-api.jpg" link="https://www.shoeisha.co.jp/book/detail/9784798190709" title="『絵で見てわかるWeb APIの仕組み』" detail="Web APIと接続するときに何が起きているのかを、基礎部分からイラスト多めで解説する入門本として出版。セキュリティ、テスト、実世界での使われ方など幅広く解説。" />
           <ContentButton img="/img/node43.jpg" link="https://www.youtube.com/watch?v=ly9cwxl1q2I" title="Node学園 43時限目" detail="『[入門]Webフロントエンド E2E テスト』と『テスト自動化実践ガイド』の出版記念としてE2Eテストに関してのイベントを東京Node学園協力のもと開催。" />
           <ContentButton img="/img/sd-e2e.jpg" link="https://gihyo.jp/book/2024/978-4-297-14220-9" title="『[入門]Webフロントエンド E2E テスト』" detail="技術評論社のフロントエンジニア選書シリーズとしてE2Eテストの入門本として出版。Software Designの寄稿をベースに、Playwrightの使い方とE2Eテストの考え方について執筆。" />
           <ContentButton img="/img/gigazine-intro-icon.jpg" link="https://gigazine.net/news/20220517-obs-discord-icon-generator/" title="配信画面上で今誰が話してるのかをDiscordのアイコンで超わかりやすくする「OBSのDiscordアイコン外観変更ジェネレーター」の使い方 - GIGAZINE" detail="GIGAZINEによる紹介。" />
